@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.sunny-background {
+  background: linear-gradient(rgb(211, 160, 21), rgb(218, 204, 12));
+}
+
+.overcast-background {
+  background: linear-gradient(rgb(142, 155, 168), rgb(126, 124, 106));
+}
+
+.cloudy-background {
+  background: linear-gradient(rgb(211, 213, 214), rgb(245, 241, 207));
+  color: black;
+}
+.location,
+.temperature {
+  margin: 2rem;
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.location h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.icon {
+  width: 128px;
+  height: 128px;
+}
+
+.temperature {
+  flex-direction: column;
+}
+
+.degree-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.degree-section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.degree-section h2 {
+  font-size: 40px;
+}
